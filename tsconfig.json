@@ -1,18 +1,22 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    "baseUrl": ".",
     "module": "ESNext",
-    "lib": ["ESNext", "DOM", "scripthost"],
-    "moduleResolution": "Node",
+    "target": "ESNext",
+    "lib": ["DOM", "ESNext"],
     "strict": true,
-    "sourceMap": true,
-    "resolveJsonModule": true,
     "esModuleInterop": true,
-    "types": ["vite/client"],
-    "noEmit": true,
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
     "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["vite/client"],
+    "paths": {
+      "~/*": ["src/*"]
+    }
   },
-  "include": ["./src"]
+  "exclude": ["dist", "node_modules", "cypress"]
 }
