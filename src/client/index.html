@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bomberman</title>
+  </head>
+  <body>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+      }
+    </style>
+    <script src="./lib/phaser.min.js"></script>
+    <script src="./lib/phaser-matter-collision.js"></script>
+    <script src="./lib/socket.io.min.js"></script>
+    <script src="./lib/geckos.io-client.2.2.0.min.js"></script>
+    <script src="./lib/snapshot-interpolation.min.js"></script>
+    <script src="./entities/Avatar.js" type="module"></script>
+    <script src="./entities/Block.js" type="module"></script>
+    <script src="./index.js" type="module"></script>
+    <div id="phaser-container"></div>
+  </body>
+</html>
